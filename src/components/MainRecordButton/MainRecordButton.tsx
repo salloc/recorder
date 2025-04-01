@@ -15,7 +15,10 @@ const MainRecordButton = () => {
   const { isRecording } = useRecording();
   const { pipWindow, requestPipWindow } = usePictureInPicture();
   const { startScreenshare } = useScreenshare();
-
+  console.log(isRecording);
+  console.log(pipWindow);
+  console.log(layout);
+  console.log(countingDown);
   return (
     <RecordButton
       className={cx(styles.root, { [styles.recording]: isRecording })}

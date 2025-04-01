@@ -1,5 +1,5 @@
 .root {
-  display: grid;
+  display: flex;
   position: fixed;
   inset: 0;
   grid-template-rows: minmax(0, auto) auto;
@@ -8,7 +8,7 @@
   justify-content: center;
   row-gap: 24px;
   padding: 24px;
-
+  flex-direction: column;
   &.placeholder {
     grid-template-rows: minmax(0, 1fr) auto;
   }
