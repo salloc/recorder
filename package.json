@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite preview --port 8080",
     "build": "tsc && vite build",
     "deploy": "s3-spa-upload --cache-control-mapping cache-control.json --delete dist",
     "preview": "vite preview",
